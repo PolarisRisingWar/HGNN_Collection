@@ -44,6 +44,7 @@
 3. (IEEE Transactions on Knowledge and Data Engineering) mg2vec: Learning Relationship-Preserving Heterogeneous Graph Representations via Metagraph Embedding：meta graph
 4. (IEEE Transactions on Knowledge and Data Engineering) RHINE: Relation Structure-Aware Heterogeneous Information Network Embedding
 5. (IEEE Transactions on Knowledge and Data Engineering) Explicit Message-Passing Heterogeneous Graph Neural Network：提出EMP模型。本文认为传统用metapaths将异质图构建为同质图的方法是隐式的，而EMP模型显式信息传递
+6. (World Wide Web) [How the four-nodes motifs work in heterogeneous node representation?](https://link.springer.com/article/10.1007/s11280-022-01115-1)
 5. (Neural Networks) Latent neighborhood-based heterogeneous graph representation：随机游走增强邻居+GTN学习metapaths
 6. (IEEE Transactions on Neural Networks and Learning Systems) Learning Knowledge Graph Embedding With Heterogeneous Relation Attention Networks
 7. (Appl. Sci.) MBHAN: Motif-Based Heterogeneous Graph Attention Network：基于motif
