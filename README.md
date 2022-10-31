@@ -49,6 +49,7 @@
 6. (IEEE Transactions on Neural Networks and Learning Systems) Learning Knowledge Graph Embedding With Heterogeneous Relation Attention Networks
 7. (Appl. Sci.) MBHAN: Motif-Based Heterogeneous Graph Attention Network：基于motif
 8. (Data Mining and Knowledge Discovery) Personalised meta-path generation for heterogeneous graph neural networks：提出PM-HGNN模型，强化学习（将找metapaths视作马尔科夫决策过程）
+9. (Machine Learning) [Heterogeneous graph embedding with single-level aggregation and infomax encoding](https://link.springer.com/article/10.1007/s10994-022-06160-5)：提出无监督HGNN模型HIME
 9. (IEEE Access) Siamese Network Based Multiscale Self-Supervised Heterogeneous Graph Representation Learning：提出SNMH模型，自监督学习+对比学习（metapaths和one-hop）+孪生神经网络
 6. Simple and Efficient Heterogeneous Graph Neural Network：提出SeHGNN模型，预处理+无参+轻量级
 7. Relation Embedding based Graph Neural Networks for Handling Heterogeneous Graph：不用metapaths
@@ -131,10 +132,10 @@ anchor link prediction任务：
 
 **2019年**  
 通用节点嵌入：
-1. (WWW) Heterogeneous Graph Attention Network：提出HAN模型，先基于metapath attentively聚合节点信息，然后attentively聚合metapath信息
+1. (WWW) [Heterogeneous Graph Attention Network](https://arxiv.org/abs/1903.07293)：提出HAN模型，先基于metapath attentively聚合节点信息，然后attentively聚合metapath信息
 2. (NeurIPS) Graph Transformer Networks：提出GTN模型，自动学习metapaths
 3. (KDD) Heterogeneous Graph Neural Network：提出HetGNN模型，用RWR抽样异质邻居，按节点类型分类，然后用聚合
-4. (KDD) Representation learning for attributed multiplex heterogeneous network：提出GATNE模型
+4. (KDD) [Representation Learning for Attributed Multiplex Heterogeneous Network](https://arxiv.org/abs/1905.01669)：提出GATNE模型
 3. (ICDM) Relation Structure-Aware Heterogeneous Graph Neural Network：提出RSHN模型，用coarsened line graph先获得边特征，然后传播节点和边特征
 6. Heterogeneous Deep Graph Infomax：提出HDGI模型，信息论+无监督学习
 
@@ -147,7 +148,7 @@ anchor link prediction任务：
 **2018年**  
 通用节点嵌入：
 1. (CIKM) Are Meta-Paths Necessary?: Revisiting Heterogeneous Graph Embeddings
-2. (ESWC) Modeling relational data with graph convolutional networks：提出RGCN模型
+2. (ESWC) [Modeling Relational Data with Graph Convolutional Networks](https://arxiv.org/abs/1703.06103)：提出RGCN模型
 
 **2017年**  
 通用节点嵌入：
