@@ -56,6 +56,7 @@
 9. Heterogeneous Graph Neural Networks using Self-supervised Reciprocally Contrastive Learning：提出HGCL模型，自监督学习+对比学习（节点属性和拓扑结构）
 10. Heterogeneous Graph Contrastive Multi-view Learning：提出HGCML模型，关注减轻对比学习（metapaths）中的采样偏差
 10. Heterogeneous Graph Masked Autoencoders：提出HGMAE模型，auto encoder
+11. [Meta-node: A Concise Approach to Effectively Learn Complex Relationships in Heterogeneous Graphs](https://arxiv.org/abs/2210.14480)：不用预定义的meta-paths或meta-graphs
 
 预训练：
 1. (NeurIPS) [Self-supervised Heterogeneous Graph Pre-training Based on Structural Clustering](https://arxiv.org/abs/2210.10462)
