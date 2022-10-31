@@ -1,12 +1,21 @@
-import torch
+import argparse
+parser = argparse.ArgumentParser()
+
+parser.add_argument("--folder",help='net_dbis文件夹所处的文件夹',type=str)
+#请提前将net_dbis.zip解压到folder文件夹下
+#即folder文件夹下应有叫net_dbis的文件夹，内含id_author.txt id_conf.txt paper_author.txt paper_conf.txt paper.txt
+
+args = parser.parse_args()
+arg_dict=args.__dict__
+
+print(arg_dict)
+
+
+import torch,os
 
 from torch_geometric.data import HeteroData
 
-
-#请提前将net_dbis.zip解压到folder文件夹下
-#即folder文件夹下应有叫net_dbis的文件夹，内含id_author.txt id_conf.txt paper_author.txt paper_conf.txt paper.txt
-folder='/data/wanghuijuan/hgnn_data'
-files_folder=folder+'/net_dbis'
+files_folder=os.path.join(arg_dict['folder'],'net_dbis')
 
 #以下代码参考PyG.datasets.AMiner
 
