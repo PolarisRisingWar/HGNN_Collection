@@ -8,6 +8,7 @@
 
 * [1. 数据](#数据)
 * [2. 论文](#论文)
+* [3. 工具](#工具)
 
 # 数据
 简单介绍：
@@ -49,7 +50,9 @@
 6. (IEEE Transactions on Neural Networks and Learning Systems) Learning Knowledge Graph Embedding With Heterogeneous Relation Attention Networks
 7. (Appl. Sci.) MBHAN: Motif-Based Heterogeneous Graph Attention Network：基于motif
 8. (Data Mining and Knowledge Discovery) Personalised meta-path generation for heterogeneous graph neural networks：提出PM-HGNN模型，强化学习（将找metapaths视作马尔科夫决策过程）
-9. (Machine Learning) [Heterogeneous graph embedding with single-level aggregation and infomax encoding](https://link.springer.com/article/10.1007/s10994-022-06160-5)：提出无监督HGNN模型HIME
+9. (Machine Learning) [Heterogeneous graph embedding with single-level aggregation and infomax encoding](https://link.springer.com/article/10.1007/s10994-022-06160-5)：提出无监督HGNN模型HIME，对节点特征应用MLP（每一种节点用一个模型），直接进行聚合。损失函数鼓励邻居相近+信息最大化
+10. (International Journal of Machine Learning and Cybernetics) [Multiple heterogeneous network representation learning based on multi-granularity fusion](https://link.springer.com/article/10.1007/s13042-022-01665-w)：将结构（一阶邻居）和语义（meta-path）视作不同粒度，结合来学习表征
+11. (Journal of Applied Mathematics) [Classification Algorithm for Heterogeneous Network Data Streams Based on Big Data Active Learning](https://downloads.hindawi.com/journals/jam/2022/2996725.pdf)
 9. (IEEE Access) Siamese Network Based Multiscale Self-Supervised Heterogeneous Graph Representation Learning：提出SNMH模型，自监督学习+对比学习（metapaths和one-hop）+孪生神经网络
 6. Simple and Efficient Heterogeneous Graph Neural Network：提出SeHGNN模型，预处理+无参+轻量级
 7. Relation Embedding based Graph Neural Networks for Handling Heterogeneous Graph：不用metapaths
@@ -114,7 +117,7 @@ AI安全：
 1. (IJCAI) Heterogeneous Network Representation Learning：综述
 2. (AAAI) An Attention-based Graph Neural Network for Heterogeneous Structural Learning：提出HetSANN模型，基于关系类型，建立attention机制，实现节点信息聚合，不使用metapath（参考博文：[Re22：读论文 HetSANN An Attention-based Graph Neural Network for Heterogeneous Structural Learning_诸神缄默不语的博客-CSDN博客](https://blog.csdn.net/PolarisRisingWar/article/details/126058473)）
 2. (WWW) MAGNN: Metapath Aggregated Graph Neural Network for Heterogeneous Graph Embedding：首先对节点特征进行转换，然后聚合metapath内部信息，然后聚合各metapath的信息
-3. (WWW) Heterogeneous Graph Transformer：提出HGT模型，把整个Transformer结构改到图上，这种感觉
+3. (WWW) [Heterogeneous Graph Transformer](https://arxiv.org/abs/2003.01332)：提出HGT模型，把整个Transformer结构改到图上，这种感觉
 4. Hybrid Micro/Macro Level Convolution for Heterogeneous Graph Learning：提出HGConv模型
 5. Reinforcement Learning Enhanced Heterogeneous Graph Neural Network：提出HGRL模型，强化学习（将找metapaths视作马尔科夫决策过程）
 6. (被ICLR 2021拒了) Scalable Graph Neural Networks for Heterogeneous Graphs：提出NARS模型，关注scalability问题
@@ -123,6 +126,9 @@ AI安全：
 1. (ECIR) Dynamic Heterogeneous Graph Embedding Using Hierarchical Attentions：提出DyHAN模型（实验仅做了链路预测）
 2. (ICKG) Heterogeneous Dynamic Graph Attention Network：提出HDGAN模型
 2. Meta Graph Attention on Heterogeneous Graph with Node-Edge Co-evolution：提出CoMGNN和ST-CoMGNN模型
+
+multiplex graph：
+1. (AAAI) [Unsupervised Attributed Multiplex Network Embedding](https://arxiv.org/abs/1911.06750)：提出DMGI模型
 
 多模态：
 1. (KDD) HGMF: Heterogeneous Graph-based Fusion for Multimodal Data with Incompleteness
@@ -136,7 +142,9 @@ anchor link prediction任务：
 2. (NeurIPS) Graph Transformer Networks：提出GTN模型，自动学习metapaths
 3. (KDD) Heterogeneous Graph Neural Network：提出HetGNN模型，用RWR抽样异质邻居，按节点类型分类，然后用聚合
 4. (KDD) [Representation Learning for Attributed Multiplex Heterogeneous Network](https://arxiv.org/abs/1905.01669)：提出GATNE模型
+5. (KDD) [Adversarial Learning on Heterogeneous Information Networks](http://shichuan.org/doc/70.pdf)：提出HetGAN模型
 3. (ICDM) Relation Structure-Aware Heterogeneous Graph Neural Network：提出RSHN模型，用coarsened line graph先获得边特征，然后传播节点和边特征
+4. (CIKM) [BHIN2vec: Balancing the Type of Relation in Heterogeneous Information Network](https://arxiv.org/abs/1912.08925)：提出BHIN2vec模型，随机游走+skip gram+多任务，解决HIN中不同种类边数不平衡的问题
 6. Heterogeneous Deep Graph Infomax：提出HDGI模型，信息论+无监督学习
 
 图匹配：
@@ -148,11 +156,25 @@ anchor link prediction任务：
 **2018年**  
 通用节点嵌入：
 1. (CIKM) Are Meta-Paths Necessary?: Revisiting Heterogeneous Graph Embeddings
+2. (KDD) [Easing Embedding Learning by Comprehensive Transcription of Heterogeneous Information Networks](https://dl.acm.org/doi/10.1145/3219819.3220006)
+3. (TKDE) [Heterogeneous Information Network Embedding for Recommendation](https://arxiv.org/abs/1711.10730)：提出HERec模型
 2. (ESWC) [Modeling Relational Data with Graph Convolutional Networks](https://arxiv.org/abs/1703.06103)：提出RGCN模型
+3. (SIAM) [AspEm: Embedding Learning by Aspects in Heterogeneous Information Networks](https://arxiv.org/abs/1803.01848)
+
+链路预测：
+1. (KDD) [PME: Projected Metric Embedding on Heterogeneous Networks for Link Prediction](https://www.kdd.org/kdd2018/accepted-papers/view/pme-projected-metric-embedding-on-heterogeneous-networks-for-link-predictio)
 
 **2017年**  
 通用节点嵌入：
-1. (KDD) metapath2vec: Scalable Representation Learning for Heterogeneous Networks：用基于metapath的随机游走来构建邻居，然后用类似word2vec的逻辑来实现节点表征（参考博文：[Re31：读论文 metapath2vec: Scalable Representation Learning for Heterogeneous Networks_诸神缄默不语的博客-CSDN博客](https://blog.csdn.net/PolarisRisingWar/article/details/127055716)）
+1. (KDD) [metapath2vec: Scalable Representation Learning for Heterogeneous Networks](https://ericdongyx.github.io/papers/KDD17-dong-chawla-swami-metapath2vec.pdf)：用基于metapath的随机游走来构建邻居，然后用类似word2vec的逻辑来实现节点表征（参考博文：[Re31：读论文 metapath2vec: Scalable Representation Learning for Heterogeneous Networks_诸神缄默不语的博客-CSDN博客](https://blog.csdn.net/PolarisRisingWar/article/details/127055716)）
+2. (CIKM) [HIN2Vec: Explore Meta-paths in Heterogeneous Information Networks for Representation Learning](https://dl.acm.org/doi/pdf/10.1145/3132847.3132953)
+3. (WSDM) [Embedding of Embedding (EOE): Joint Embedding for Coupled Heterogeneous Networks](http://shichuan.org/hin/time/2017.%20WSDM%20Embedding%20of%20Embedding%20EOE%20Joint%20Embedding%20for%20Coupled%20Heterogeneous%20Networks.pdf)
+
+**2015年**  
+1. (KDD) [PTE: Predictive Text Embedding through Large-scale Heterogeneous Text Networks](https://arxiv.org/abs/1508.00200)
+
+**2014年**  
+1. (CIKM) [Meta-Path-Based Ranking with Pseudo Relevance Feedback on Heterogeneous Graph for Citation Recommendation](https://dl.acm.org/doi/10.1145/2661829.2661965)
 
 **2013年**  
 博弈论：
@@ -162,7 +184,13 @@ anchor link prediction任务：
 节点分类：
 1. (World Wide Web) Graffiti: graph-based classification in heterogeneous networks
 
+节点相似性：
+1. (Proceedings of the VLDB Endowment) [PathSim: Meta Path-Based Top-K Similarity Search in Heterogeneous Information Networks](http://www.vldb.org/pvldb/vol4/p992-sun.pdf)
+
 **2010年**  
 通用节点嵌入：
 1. (ECML PKDD) Graph Regularized Transductive Classification on Heterogeneous Information Networks
 2. Optimal Embedding of Heterogeneous Graph Data with Edge Crossing Constraints 
+
+# 工具
+1. [BUPT-GAMMA/OpenHINE: An Open-Source Toolkit for Heterogeneous Information Network Embedding (HINE)](https://github.com/BUPT-GAMMA/OpenHINE)
