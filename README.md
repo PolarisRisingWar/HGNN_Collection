@@ -38,7 +38,7 @@
 # 论文
 **2022年**  
 通用节点嵌入：
-1. (SDM) Structure-Enhanced Heterogeneous Graph Contrastive Learning：跨视图（metapaths）+对比学习
+1. (SDM) [Structure-Enhanced Heterogeneous Graph Contrastive Learning](https://www.cs.emory.edu/~jyang71/files/stencil.pdf)：提出STENCIL模型，跨视图（保证视图之间一致性最大化）（基于metapaths构建视图（metapath实例起终点构成的同质图），最大化同一节点在不同视图上嵌入的相似性，将各视图的嵌入attentively聚合）+对比学习+结构嵌入
 2. (Transactions on Big Data) A Survey on Heterogeneous Graph Embedding: Methods, Techniques, Applications and Sources：综述
 2. (Knowledge-Based Systems) Megnn: Meta-path extracted graph neural network for heterogeneous graph representation learning：自动提取metapaths+可解释性
 2. (IEEE Transactions on Knowledge and Data Engineering) Heterogeneous Graph Representation Learning with Relation Awareness：提出R-HGNN模型
@@ -84,7 +84,7 @@ AI安全：
 **2021年**  
 通用节点嵌入：
 1. (KDD) Are we really making much progress? Revisiting, benchmarking, and refining heterogeneous graph neural networks：先把近年多篇论文（HAN、GTN、RSHN、HetGNN、MAGNN、HGT、HetSANN、RGCN、GATNE、KGCN、KAGT）喷了一遍，然后提出Simple-HGN模型（参考博文：[Re10：读论文 Are we really making much progress? Revisiting, benchmarking, and refining heterogeneous gr_诸神缄默不语的博客-CSDN博客](https://blog.csdn.net/PolarisRisingWar/article/details/126009977)）
-2. (KDD) Self-supervised Heterogeneous Graph Neural Network with Co-contrastive Learning：跨视图（metapath和network）+对比学习+自监督学习
+2. (KDD) [Self-supervised Heterogeneous Graph Neural Network with Co-contrastive Learning](https://arxiv.org/abs/2105.09111)：提出HeCo模型，跨视图（metapath和network）+对比学习+自监督学习
 3. (KDD) HGK-GNN: Heterogeneous Graph Kernel based Graph Neural Networks：引入HGK
 3. (KDD) DiffMG: Differentiable Meta Graph Search for Heterogeneous Graph Neural Networks：NAS
 2. (AAAI) Heterogeneous graph structure learning for graph neural networks
@@ -116,7 +116,7 @@ AI安全：
 通用节点嵌入：
 1. (IJCAI) Heterogeneous Network Representation Learning：综述
 2. (AAAI) An Attention-based Graph Neural Network for Heterogeneous Structural Learning：提出HetSANN模型，基于关系类型，建立attention机制，实现节点信息聚合，不使用metapath（参考博文：[Re22：读论文 HetSANN An Attention-based Graph Neural Network for Heterogeneous Structural Learning_诸神缄默不语的博客-CSDN博客](https://blog.csdn.net/PolarisRisingWar/article/details/126058473)）
-2. (WWW) MAGNN: Metapath Aggregated Graph Neural Network for Heterogeneous Graph Embedding：首先对节点特征进行转换，然后聚合metapath内部信息，然后聚合各metapath的信息
+2. (WWW) [MAGNN: Metapath Aggregated Graph Neural Network for Heterogeneous Graph Embedding](https://arxiv.org/abs/2002.01680)：首先对节点特征进行转换，然后聚合metapath内部信息，然后聚合各metapath的信息
 3. (WWW) [Heterogeneous Graph Transformer](https://arxiv.org/abs/2003.01332)：提出HGT模型，把整个Transformer结构改到图上，这种感觉
 4. Hybrid Micro/Macro Level Convolution for Heterogeneous Graph Learning：提出HGConv模型
 5. Reinforcement Learning Enhanced Heterogeneous Graph Neural Network：提出HGRL模型，强化学习（将找metapaths视作马尔科夫决策过程）
@@ -139,13 +139,13 @@ anchor link prediction任务：
 **2019年**  
 通用节点嵌入：
 1. (WWW) [Heterogeneous Graph Attention Network](https://arxiv.org/abs/1903.07293)：提出HAN模型，先基于metapath attentively聚合节点信息，然后attentively聚合metapath信息
-2. (NeurIPS) Graph Transformer Networks：提出GTN模型，自动学习metapaths
-3. (KDD) Heterogeneous Graph Neural Network：提出HetGNN模型，用RWR抽样异质邻居，按节点类型分类，然后用聚合
+2. (NeurIPS) [Graph Transformer Networks](https://proceedings.neurips.cc/paper/2019/file/9d63484abb477c97640154d40595a3bb-Paper.pdf)：提出GTN模型，自动学习metapaths
+3. (KDD) [Heterogeneous Graph Neural Network](https://dl.acm.org/doi/pdf/10.1145/3292500.3330961)：提出HetGNN模型，用RWR抽样异质邻居，按节点类型分类，然后用聚合
 4. (KDD) [Representation Learning for Attributed Multiplex Heterogeneous Network](https://arxiv.org/abs/1905.01669)：提出GATNE模型
 5. (KDD) [Adversarial Learning on Heterogeneous Information Networks](http://shichuan.org/doc/70.pdf)：提出HetGAN模型
 3. (ICDM) Relation Structure-Aware Heterogeneous Graph Neural Network：提出RSHN模型，用coarsened line graph先获得边特征，然后传播节点和边特征
 4. (CIKM) [BHIN2vec: Balancing the Type of Relation in Heterogeneous Information Network](https://arxiv.org/abs/1912.08925)：提出BHIN2vec模型，随机游走+skip gram+多任务，解决HIN中不同种类边数不平衡的问题
-6. Heterogeneous Deep Graph Infomax：提出HDGI模型，信息论+无监督学习
+6. [Heterogeneous Deep Graph Infomax](https://arxiv.org/abs/1911.08538v5)：提出HDGI模型，信息论+无监督学习
 
 图匹配：
 1. (IJCAI) Heterogeneous Graph Matching Networks for Unknown Malware Detection
@@ -157,7 +157,7 @@ anchor link prediction任务：
 通用节点嵌入：
 1. (CIKM) Are Meta-Paths Necessary?: Revisiting Heterogeneous Graph Embeddings
 2. (KDD) [Easing Embedding Learning by Comprehensive Transcription of Heterogeneous Information Networks](https://dl.acm.org/doi/10.1145/3219819.3220006)
-3. (TKDE) [Heterogeneous Information Network Embedding for Recommendation](https://arxiv.org/abs/1711.10730)：提出HERec模型
+3. (TKDE) [Heterogeneous Information Network Embedding for Recommendation](https://arxiv.org/abs/1711.10730)：提出HERec模型，将异质图转换为metapath-based graphs，用skip-gram嵌入
 2. (ESWC) [Modeling Relational Data with Graph Convolutional Networks](https://arxiv.org/abs/1703.06103)：提出RGCN模型
 3. (SIAM) [AspEm: Embedding Learning by Aspects in Heterogeneous Information Networks](https://arxiv.org/abs/1803.01848)
 
@@ -166,7 +166,8 @@ anchor link prediction任务：
 
 **2017年**  
 通用节点嵌入：
-1. (KDD) [metapath2vec: Scalable Representation Learning for Heterogeneous Networks](https://ericdongyx.github.io/papers/KDD17-dong-chawla-swami-metapath2vec.pdf)：用基于metapath的随机游走来构建邻居，然后用类似word2vec的逻辑来实现节点表征（参考博文：[Re31：读论文 metapath2vec: Scalable Representation Learning for Heterogeneous Networks_诸神缄默不语的博客-CSDN博客](https://blog.csdn.net/PolarisRisingWar/article/details/127055716)）
+1. (KDD) [metapath2vec: Scalable Representation Learning for Heterogeneous Networks](https://ericdongyx.github.io/papers/KDD17-dong-chawla-swami-metapath2vec.pdf)：用基于metapath的随机游走来构建邻居，然后用类似word2vec的逻辑来实现节点表征（类似DeepWalk）（参考博文：[Re31：读论文 metapath2vec: Scalable Representation Learning for Heterogeneous Networks_诸神缄默不语的博客-CSDN博客](https://blog.csdn.net/PolarisRisingWar/article/details/127055716)）
+2. (KDD) [Meta-Path Guided Embedding for Similarity Search in Large-Scale Heterogeneous Information Networks](https://arxiv.org/abs/1610.09769)：提出ESim模型，根据预定义的权重从抽样出的metapaths实例中捕获节点语义
 2. (CIKM) [HIN2Vec: Explore Meta-paths in Heterogeneous Information Networks for Representation Learning](https://dl.acm.org/doi/pdf/10.1145/3132847.3132953)
 3. (WSDM) [Embedding of Embedding (EOE): Joint Embedding for Coupled Heterogeneous Networks](http://shichuan.org/hin/time/2017.%20WSDM%20Embedding%20of%20Embedding%20EOE%20Joint%20Embedding%20for%20Coupled%20Heterogeneous%20Networks.pdf)
 
