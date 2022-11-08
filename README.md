@@ -39,7 +39,7 @@
 **2022年**  
 通用节点嵌入：
 1. (SDM) [Structure-Enhanced Heterogeneous Graph Contrastive Learning](https://www.cs.emory.edu/~jyang71/files/stencil.pdf)：提出STENCIL模型，跨视图（保证视图之间一致性最大化）（基于metapaths构建视图（metapath实例起终点构成的同质图），最大化同一节点在不同视图上嵌入的相似性，将各视图的嵌入attentively聚合）+对比学习+结构嵌入
-2. (Transactions on Big Data) A Survey on Heterogeneous Graph Embedding: Methods, Techniques, Applications and Sources：综述
+2. (Transactions on Big Data) [A Survey on Heterogeneous Graph Embedding: Methods, Techniques, Applications and Sources](https://arxiv.org/abs/2011.14867)：综述
 2. (Knowledge-Based Systems) Megnn: Meta-path extracted graph neural network for heterogeneous graph representation learning：自动提取metapaths+可解释性
 2. (IEEE Transactions on Knowledge and Data Engineering) Heterogeneous Graph Representation Learning with Relation Awareness：提出R-HGNN模型
 3. (IEEE Transactions on Knowledge and Data Engineering) mg2vec: Learning Relationship-Preserving Heterogeneous Graph Representations via Metagraph Embedding：meta graph
@@ -67,6 +67,7 @@
 
 multiplex graph：
 1. (KDD) Multiplex Heterogeneous Graph Convolutional Network
+2. (ijtr) [DSMN: A New Approach for Link Prediction in Multilplex Networks](https://ijict.itrc.ac.ir/browse.php?a_code=A-10-3655-1&slc_lang=other&sid=1)
 
 小样本学习：
 1. (KDD) Few-shot Heterogeneous Graph Learning via Cross-domain Knowledge Transfer
@@ -175,7 +176,8 @@ anchor link prediction任务：
 1. (KDD) [PTE: Predictive Text Embedding through Large-scale Heterogeneous Text Networks](https://arxiv.org/abs/1508.00200)
 
 **2014年**  
-1. (CIKM) [Meta-Path-Based Ranking with Pseudo Relevance Feedback on Heterogeneous Graph for Citation Recommendation](https://dl.acm.org/doi/10.1145/2661829.2661965)
+1. (KDD) [Mining heterogeneous information networks: a structural analysis approach](https://www.kdd.org/exploration_files/V14-02-03-Sun.pdf)
+2. (CIKM) [Meta-Path-Based Ranking with Pseudo Relevance Feedback on Heterogeneous Graph for Citation Recommendation](https://dl.acm.org/doi/10.1145/2661829.2661965)
 
 **2013年**  
 博弈论：
