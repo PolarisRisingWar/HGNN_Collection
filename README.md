@@ -38,7 +38,8 @@
 # 论文
 **2022年**  
 通用节点嵌入：
-1. (SDM) [Structure-Enhanced Heterogeneous Graph Contrastive Learning](https://www.cs.emory.edu/~jyang71/files/stencil.pdf)：提出STENCIL模型，跨视图（保证视图之间一致性最大化）（基于metapaths构建视图（metapath实例起终点构成的同质图），最大化同一节点在不同视图上嵌入的相似性，将各视图的嵌入attentively聚合）+对比学习+结构嵌入
+1. (World Wide Web) [HGNN-ETA: Heterogeneous graph neural network enriched with text attribute](https://link.springer.com/article/10.1007/s11280-022-01120-4)：利用节点的文本特征信息
+2. (SDM) [Structure-Enhanced Heterogeneous Graph Contrastive Learning](https://www.cs.emory.edu/~jyang71/files/stencil.pdf)：提出STENCIL模型，跨视图（保证视图之间一致性最大化）（基于metapaths构建视图（metapath实例起终点构成的同质图），最大化同一节点在不同视图上嵌入的相似性，将各视图的嵌入attentively聚合）+对比学习+结构嵌入
 2. (Transactions on Big Data) [A Survey on Heterogeneous Graph Embedding: Methods, Techniques, Applications and Sources](https://arxiv.org/abs/2011.14867)：综述
 2. (Knowledge-Based Systems) Megnn: Meta-path extracted graph neural network for heterogeneous graph representation learning：自动提取metapaths+可解释性
 2. (IEEE Transactions on Knowledge and Data Engineering) Heterogeneous Graph Representation Learning with Relation Awareness：提出R-HGNN模型
