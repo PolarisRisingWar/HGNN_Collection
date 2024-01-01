@@ -36,9 +36,35 @@
 [PyG (PyTorch Geometric) Dropbox系图数据集无法下载的解决方案（AMiner, DBLP, IMDB, LastFM）（持续更新ing...）](https://blog.csdn.net/PolarisRisingWar/article/details/126980943)
 
 # 论文
+**2023年**  
+通用节点嵌入：
+1. (WWW) [A Post-Training Framework for Improving Heterogeneous Graph Neural Networks](https://arxiv.org/abs/2304.00698)
+2. (Journal of Computational Science) [Multi-view contrastive learning for multilayer network embedding](https://www.sciencedirect.com/science/article/abs/pii/S1877750323000352)
+2. (Entropy) [Unsupervised Embedding Learning for Large-Scale Heterogeneous Networks Based on Metapath Graph Sampling](https://www.mdpi.com/1099-4300/25/2/297)
+4. (Scientific Reports) [A multi-view contrastive learning for heterogeneous network embedding](https://www.nature.com/articles/s41598-023-33324-7)
+2. [HINormer: Representation Learning On Heterogeneous Information Networks with Graph Transformer](https://arxiv.org/abs/2302.11329)
+2. [Heterophily-Aware Graph Attention Network](https://arxiv.org/abs/2302.03228)
+
+动态图节点嵌入：
+1. (Neurocomputing) [Dynamic heterogeneous graph representation learning with neighborhood type modeling](https://www.sciencedirect.com/science/article/abs/pii/S0925231223002096)
+
+graph rewiring:
+1. (WWW) [Homophily-oriented Heterogeneous Graph Rewiring](https://arxiv.org/abs/2302.06299)：同配性+异质性
+
+graphlet和orbit计数：
+1. [Graphlet and Orbit Computation on Heterogeneous Graphs](https://arxiv.org/abs/2304.14268)
+
+交叉学科：
+1. (Phys. Rev. E) [Deterministic, quenched and annealed parameter estimation for heterogeneous network models](https://arxiv.org/abs/2303.02716)：计量经济学+物理
+
 **2022年**  
+综述：
+1. (Artificial Intelligence Review) [Heterogeneous graph neural networks analysis: a survey of techniques, evaluations and applications](https://link.springer.com/article/10.1007/s10462-022-10375-2)
+
 通用节点嵌入：
 1. (World Wide Web) [HGNN-ETA: Heterogeneous graph neural network enriched with text attribute](https://link.springer.com/article/10.1007/s11280-022-01120-4)：利用节点的文本特征信息
+6. (World Wide Web) [How the four-nodes motifs work in heterogeneous node representation?](https://link.springer.com/article/10.1007/s11280-022-01115-1)
+3. (CIKM) [SplitGNN: Splitting GNN for Node Classification with Heterogeneous Attention](https://arxiv.org/abs/2301.12885)：联邦学习
 2. (SDM) [Structure-Enhanced Heterogeneous Graph Contrastive Learning](https://www.cs.emory.edu/~jyang71/files/stencil.pdf)：提出STENCIL模型，跨视图（保证视图之间一致性最大化）（基于metapaths构建视图（metapath实例起终点构成的同质图），最大化同一节点在不同视图上嵌入的相似性，将各视图的嵌入attentively聚合）+对比学习+结构嵌入
 2. (Transactions on Big Data) [A Survey on Heterogeneous Graph Embedding: Methods, Techniques, Applications and Sources](https://arxiv.org/abs/2011.14867)：综述
 2. (Knowledge-Based Systems) Megnn: Meta-path extracted graph neural network for heterogeneous graph representation learning：自动提取metapaths+可解释性
@@ -46,7 +72,7 @@
 3. (IEEE Transactions on Knowledge and Data Engineering) mg2vec: Learning Relationship-Preserving Heterogeneous Graph Representations via Metagraph Embedding：meta graph
 4. (IEEE Transactions on Knowledge and Data Engineering) RHINE: Relation Structure-Aware Heterogeneous Information Network Embedding
 5. (IEEE Transactions on Knowledge and Data Engineering) Explicit Message-Passing Heterogeneous Graph Neural Network：提出EMP模型。本文认为传统用metapaths将异质图构建为同质图的方法是隐式的，而EMP模型显式信息传递
-6. (World Wide Web) [How the four-nodes motifs work in heterogeneous node representation?](https://link.springer.com/article/10.1007/s11280-022-01115-1)
+19. (南洋理工大学硕士论文) [Contrastive learning for heterogeneous graph neural networks](https://dr.ntu.edu.sg/handle/10356/164475)
 5. (Neural Networks) Latent neighborhood-based heterogeneous graph representation：随机游走增强邻居+GTN学习metapaths
 6. (IEEE Transactions on Neural Networks and Learning Systems) Learning Knowledge Graph Embedding With Heterogeneous Relation Attention Networks
 7. (Appl. Sci.) MBHAN: Motif-Based Heterogeneous Graph Attention Network：基于motif
@@ -55,6 +81,8 @@
 10. (International Journal of Machine Learning and Cybernetics) [Multiple heterogeneous network representation learning based on multi-granularity fusion](https://link.springer.com/article/10.1007/s13042-022-01665-w)：将结构（一阶邻居）和语义（meta-path）视作不同粒度，结合来学习表征
 11. (Journal of Applied Mathematics) [Classification Algorithm for Heterogeneous Network Data Streams Based on Big Data Active Learning](https://downloads.hindawi.com/journals/jam/2022/2996725.pdf)
 9. (IEEE Access) Siamese Network Based Multiscale Self-Supervised Heterogeneous Graph Representation Learning：提出SNMH模型，自监督学习+对比学习（metapaths和one-hop）+孪生神经网络
+18. (ICCWAMTIP) [Relation Heterogeneous Graph Neural Network](https://ieeexplore.ieee.org/abstract/document/10016506)
+21. (ICDMW) [Graph Convolutional Neural Network based on the Combination of Multiple Heterogeneous Graphs](https://ieeexplore.ieee.org/abstract/document/10031027)
 6. Simple and Efficient Heterogeneous Graph Neural Network：提出SeHGNN模型，预处理+无参+轻量级
 7. Relation Embedding based Graph Neural Networks for Handling Heterogeneous Graph：不用metapaths
 8. Descent Steps of a Relation-Aware Energy Produce Heterogeneous Graph Neural Networks：关注过平滑问题
@@ -82,6 +110,9 @@ AI安全：
 
 匹配节点：
 1. (AAAI) From One to All: Learning to Match Heterogeneous and Partially Overlapped Graphs
+
+链路预测：
+1. (ICDM) [Revisiting Link Prediction on Heterogeneous Graphs with a Multi-view Perspective](https://ieeexplore.ieee.org/abstract/document/10027638)
 
 **2021年**  
 通用节点嵌入：
